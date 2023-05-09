@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  HarryPotterApp
+
+  Created by Alexandra Kurganova on 07.05.2023.
+  
+*/
+
+// MARK: - filter buttons
+"filter_button_houses" = "Вы можете отфильтровать всех %@ по\U00A0факультетам";
+"filter_button_sex" = "Вы можете отфильтровать всех %@ по\U00A0полу";
+
+"person_filter_students" = "студентов";
+"person_filter_teachers" = "учителей";
+
+// ЬARK: - sex
+"sex_male" = "Мужской";
+"sex_female" = "Женский";
+
+// MARK: - houses
+"house_gryffindor" = "Гриффиндор";
+"house_slytherin" = "Слизерин";
+"house_hufflepuff" = "Пуффендуй";
+"house_rawenclaw" = "Когтевран";
+
+// MARK: - person info
+"person_human" = "Человек";
+"person_date_birth" = "Дата рождения";
+"person_ancestry" = "Происхождение";
+"person_eye_color" = "Цвет глаз";
+"person_hair_color" = "Цвет волос";
+"person_wizard" = "Волшебник";
+"person_wand" = "Волшебная палочка";
+"person_patronus" = "Патронус";
+"person_actor" = "Актер";
+
+// MARK: - person ancestry variants
+"person_ancestry_blood" = "Чистокровка";
+"person_ancestry_half_blood" = "полукровка";
+"person_ancestry_dirty_blood" = "Грязнокровка";
+
+// MARK: -
+"person_" = "";
+"person_" = "";
+"person_" = "";
