@@ -1,0 +1,16 @@
+APIHelper.swift
+APIs.swift
+APIs/APIAPI.swift
+CodableHelper.swift
+Configuration.swift
+Extensions.swift
+JSONDataEncoding.swift
+JSONEncodingHelper.swift
+Models.swift
+Models/Items.swift
+Models/Items1.swift
+Models/Wand.swift
+OpenISO8601DateFormatter.swift
+SynchronizedDictionary.swift
+URLSessionImplementations.swift
+Validation.swift

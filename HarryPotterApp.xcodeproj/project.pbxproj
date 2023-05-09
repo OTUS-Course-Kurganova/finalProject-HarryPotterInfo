@@ -16,6 +16,9 @@
 		187DC4252A07BC4100056315 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC4242A07BC4100056315 /* Loader.swift */; };
 		187DC42C2A08FD6000056315 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 187DC42B2A08FD6000056315 /* Localizable.stringsdict */; };
 		187DC42E2A0A72A500056315 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC42D2A0A72A500056315 /* SpellsViewModel.swift */; };
+		187DC4352A0A79C000056315 /* generate.sh in Resources */ = {isa = PBXBuildFile; fileRef = 187DC4342A0A79C000056315 /* generate.sh */; };
+		187DC4372A0A79DB00056315 /* swagger.json in Resources */ = {isa = PBXBuildFile; fileRef = 187DC4362A0A79DB00056315 /* swagger.json */; };
+		187DC4392A0A7D3400056315 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 187DC4382A0A7D3400056315 /* Network */; };
 		18F85EEE29F591270087EF81 /* HarryPotterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */; };
 		18F85EF029F591270087EF81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EEF29F591270087EF81 /* ContentView.swift */; };
 		18F85EF229F591280087EF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F85EF129F591280087EF81 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		187DC4242A07BC4100056315 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		187DC42B2A08FD6000056315 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		187DC42D2A0A72A500056315 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		187DC42F2A0A78BA00056315 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Network; path = HarryPotterApp/Network/Network; sourceTree = SOURCE_ROOT; };
+		187DC4342A0A79C000056315 /* generate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
+		187DC4362A0A79DB00056315 /* swagger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swagger.json; sourceTree = "<group>"; };
 		18F85EEA29F591270087EF81 /* HarryPotterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterAppApp.swift; sourceTree = "<group>"; };
 		18F85EEF29F591270087EF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187DC4392A0A7D3400056315 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,11 +115,29 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		187DC4302A0A790E00056315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		187DC4332A0A798400056315 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				187DC4342A0A79C000056315 /* generate.sh */,
+				187DC4362A0A79DB00056315 /* swagger.json */,
+				187DC42F2A0A78BA00056315 /* Network */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		18F85EE129F591270087EF81 = {
 			isa = PBXGroup;
 			children = (
 				18F85EEC29F591270087EF81 /* HarryPotterApp */,
 				18F85EEB29F591270087EF81 /* Products */,
+				187DC4302A0A790E00056315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +152,7 @@
 		18F85EEC29F591270087EF81 /* HarryPotterApp */ = {
 			isa = PBXGroup;
 			children = (
+				187DC4332A0A798400056315 /* Network */,
 				18F85EFD29F591570087EF81 /* personDetsiled */,
 				18F85EFF29F591690087EF81 /* spells */,
 				18F85EFC29F5913F0087EF81 /* app */,
@@ -210,6 +236,9 @@
 			dependencies = (
 			);
 			name = HarryPotterApp;
+			packageProductDependencies = (
+				187DC4382A0A7D3400056315 /* Network */,
+			);
 			productName = HarryPotterApp;
 			productReference = 18F85EEA29F591270087EF81 /* HarryPotterApp.app */;
 			productType = "com.apple.product-type.application";
@@ -252,7 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187DC4372A0A79DB00056315 /* swagger.json in Resources */,
 				18F85EF629F591280087EF81 /* Preview Assets.xcassets in Resources */,
+				187DC4352A0A79C000056315 /* generate.sh in Resources */,
 				187DC42C2A08FD6000056315 /* Localizable.stringsdict in Resources */,
 				187DC4172A07A98800056315 /* Localizable.strings in Resources */,
 				18F85EF229F591280087EF81 /* Assets.xcassets in Resources */,
@@ -494,6 +525,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		187DC4382A0A7D3400056315 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18F85EE229F591270087EF81 /* Project object */;
 }

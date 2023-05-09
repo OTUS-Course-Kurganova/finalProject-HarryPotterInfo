@@ -1,0 +1,345 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Sample Api",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "https://hp-api.onrender.com/api",
+      "description": "Harry Potter API"
+    }
+  ],
+  "paths": {
+    "/characters": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "All characters",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharactersResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/characters/students": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "Characters who are Hogwarts students during the book series",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharactersResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/characters/staff": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "Characters who are Hogwarts staff during the book series",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharactersResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/characters/house/{house}": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "characters in a certain house, e.g. /gryffindor",
+        "description": "",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "house",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Name of a house"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharactersResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/spells": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "All spells",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpellsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CharactersResponse": {
+        "title": "Characters Response",
+        "type": "array",
+        "items": {
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "alternate_names",
+            "species",
+            "gender",
+            "house",
+            "dateOfBirth",
+            "yearOfBirth",
+            "wizard",
+            "ancestry",
+            "eyeColour",
+            "hairColour",
+            "wand",
+            "patronus",
+            "hogwartsStudent",
+            "hogwartsStaff",
+            "actor",
+            "alternate_actors",
+            "alive",
+            "image"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "example": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "example": "Harry Potter"
+            },
+            "alternate_names": {
+              "title": "Alternate_names",
+              "type": "array",
+              "items": {
+                "title": "Items",
+                "type": "string",
+                "default": "",
+                "example": "The Boy Who Lived"
+              }
+            },
+            "species": {
+              "title": "Species",
+              "type": "string",
+              "default": "",
+              "example": "human"
+            },
+            "gender": {
+              "title": "Gender",
+              "type": "string",
+              "default": "",
+              "example": "male"
+            },
+            "house": {
+              "title": "House",
+              "type": "string",
+              "default": "",
+              "example": "Gryffindor"
+            },
+            "dateOfBirth": {
+              "title": "Dateofbirth",
+              "type": "string",
+              "default": "",
+              "example": "31-07-1980"
+            },
+            "yearOfBirth": {
+              "title": "Yearofbirth",
+              "type": "integer",
+              "default": 0
+            },
+            "wizard": {
+              "title": "Wizard",
+              "type": "boolean",
+              "default": true
+            },
+            "ancestry": {
+              "title": "Ancestry",
+              "type": "string",
+              "default": "",
+              "example": "half-blood"
+            },
+            "eyeColour": {
+              "title": "Eyecolour",
+              "type": "string",
+              "default": "",
+              "example": "green"
+            },
+            "hairColour": {
+              "title": "Haircolour",
+              "type": "string",
+              "default": "",
+              "example": "black"
+            },
+            "wand": {
+              "title": "Wand",
+              "type": "object",
+              "required": [
+                "wood",
+                "core",
+                "length"
+              ],
+              "properties": {
+                "wood": {
+                  "title": "Wood",
+                  "type": "string",
+                  "default": "",
+                  "example": "holly"
+                },
+                "core": {
+                  "title": "Core",
+                  "type": "string",
+                  "default": "",
+                  "example": "phoenix feather"
+                },
+                "length": {
+                  "title": "Length",
+                  "type": "integer",
+                  "default": 0
+                }
+              }
+            },
+            "patronus": {
+              "title": "Patronus",
+              "type": "string",
+              "default": "",
+              "example": "stag"
+            },
+            "hogwartsStudent": {
+              "title": "Hogwartsstudent",
+              "type": "boolean",
+              "default": true
+            },
+            "hogwartsStaff": {
+              "title": "Hogwartsstaff",
+              "type": "boolean",
+              "default": true
+            },
+            "actor": {
+              "title": "Actor",
+              "type": "string",
+              "default": "",
+              "example": "Daniel Radcliffe"
+            },
+            "alternate_actors": {
+              "title": "Alternate_actors",
+              "type": "array",
+              "items": {
+                "title": "Items",
+                "type": "string",
+                "default": "",
+                "example": "Daniel"
+              }
+            },
+            "alive": {
+              "title": "Alive",
+              "type": "boolean",
+              "default": true
+            },
+            "image": {
+              "title": "Image",
+              "type": "string",
+              "default": "",
+              "example": "https://ik.imagekit.io/hpapi/harry.jpg"
+            }
+          }
+        }
+      },
+      "SpellsResponse": {
+        "title": "Spells response",
+        "type": "array",
+        "items": {
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "description"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "example": "c76a2922-ba4c-4278-baab-44defb631236"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "example": "Aberto"
+            },
+            "description": {
+              "title": "Description",
+              "type": "string",
+              "default": "",
+              "example": "Opens locked doors"
+            }
+          }
+        }
+      }
+    }
+  }
+}
