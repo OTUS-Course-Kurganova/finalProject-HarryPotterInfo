@@ -134,7 +134,7 @@
         "title": "Characters Response",
         "type": "array",
         "items": {
-          "title": "Items",
+          "title": "Person",
           "type": "object",
           "required": [
             "id",
@@ -202,12 +202,14 @@
             "dateOfBirth": {
               "title": "Dateofbirth",
               "type": "string",
+              "nullable": true,
               "default": "",
               "example": "31-07-1980"
             },
             "yearOfBirth": {
               "title": "Yearofbirth",
               "type": "integer",
+              "nullable": true,
               "default": 0
             },
             "wizard": {
@@ -256,8 +258,9 @@
                 },
                 "length": {
                   "title": "Length",
-                  "type": "integer",
-                  "default": 0
+                  "type": "number",
+                  "nullable": true,
+                  "default": 0.0
                 }
               }
             },
@@ -311,7 +314,7 @@
         "title": "Spells response",
         "type": "array",
         "items": {
-          "title": "Items",
+          "title": "Spell",
           "type": "object",
           "required": [
             "id",

@@ -3,4 +3,302 @@
    uuid = "B59E247B-512F-473F-86D1-861D6FAA780A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "451B5BA8-9BEC-4497-8E59-EFD6B50957B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HarryPotterApp/app/skeleton/SkeletonScreenViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fillSceletonList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 335cf1202aba88ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Swift.Array&lt;Network.Items&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 661a0d3cb70dee65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;Network.Items&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 4a6be292da551144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;Network.Items&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 1d60f0a2be6e6adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Network.RequestTask in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 93bcb02ea18d0071"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; Network.RequestTask in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - af56a28ca2153908"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Network.RequestTask in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - ddc4101007c07bcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Swift.Array&lt;HarryPotterApp.PersonDataSource&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 9dde4b86bfacc12b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;HarryPotterApp.PersonDataSource&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "1B4CC7C2-10DC-4E3B-B3A8-0854F4DFBD1C - 1344bb03ae935e38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;HarryPotterApp.PersonDataSource&gt; in closure #1 @Sendable () async -&gt; HarryPotterApp.SkeletonListActions in closure #1 (inout HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment) -&gt; ComposableArchitecture.EffectPublisher&lt;HarryPotterApp.SkeletonListActions, Swift.Never&gt; in variable initialization expression of HarryPotterApp.SkeletonListReducer : ComposableArchitecture.AnyReducer&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, HarryPotterApp.SkeletonListEnvironment&gt;"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/reducer/SkeletonListReducer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86E3F4BE-D6BD-4D49-887C-09194F5F9EB9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HarryPotterApp/app/skeleton/list/SkeletonListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "86E3F4BE-D6BD-4D49-887C-09194F5F9EB9 - b7ffd867e250abda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt;&gt; in closure #1 (ComposableArchitecture.ViewStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions&gt;) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in HarryPotterApp.SkeletonListView.body.getter : some"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/SkeletonListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "86E3F4BE-D6BD-4D49-887C-09194F5F9EB9 - 81f9663105223e36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (HarryPotterApp.PersonDataSource) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt;&gt; in closure #1 (ComposableArchitecture.ViewStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions&gt;) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in HarryPotterApp.SkeletonListView.body.getter : some"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/SkeletonListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "86E3F4BE-D6BD-4D49-887C-09194F5F9EB9 - 81f9663105223e36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (HarryPotterApp.PersonDataSource) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;HarryPotterApp.PersonDataSource&gt;, Swift.String, SwiftUI.Text&gt;&gt; in closure #1 (ComposableArchitecture.ViewStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions&gt;) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in HarryPotterApp.SkeletonListView.body.getter : some"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/list/SkeletonListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "970A6A74-5187-4BC8-8951-B93512B99FC7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HarryPotterApp/app/skeleton/view/SkeletonScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "970A6A74-5187-4BC8-8951-B93512B99FC7 - a3fcbdbacb6a7a56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 (ComposableArchitecture.ViewStore&lt;HarryPotterApp.SkeletonState, HarryPotterApp.SkeletonActions&gt;) -&gt; SwiftUI.GeometryReader&lt;SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt; in HarryPotterApp.SkeletonScreen.body.getter : some"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/view/SkeletonScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "970A6A74-5187-4BC8-8951-B93512B99FC7 - cae70683b3fba8f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, ComposableArchitecture.IfLetStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, Swift.Optional&lt;HarryPotterApp.SkeletonListView&gt;&gt;)&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, ComposableArchitecture.IfLetStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, Swift.Optional&lt;HarryPotterApp.SkeletonListView&gt;&gt;)&gt;&gt; in closure #1 (ComposableArchitecture.ViewStore&lt;HarryPotterApp.SkeletonState, HarryPotterApp.SkeletonActions&gt;) -&gt; SwiftUI.GeometryReader&lt;SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, ComposableArchitecture.IfLetStore&lt;HarryPotterApp.SkeletonListState, HarryPotterApp.SkeletonListActions, Swift.Optional&lt;HarryPotterApp.SkeletonListView&gt;&gt;)&gt;&gt;&gt; in HarryPotterApp.SkeletonScreen.body.getter : some"
+                  moduleName = "HarryPotterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kurganova/Documents/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/otus.%20iOS%20dev%20Proffesional%20(22:23y)/HarryPotterApp/HarryPotterApp/app/skeleton/view/SkeletonScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C470E058-AF00-45A7-88EB-97371D0E5441"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HarryPotterApp/app/skeleton/view/SkeletonScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

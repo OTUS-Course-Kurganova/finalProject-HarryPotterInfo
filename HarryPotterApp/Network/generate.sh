@@ -11,5 +11,5 @@ openapi-generator generate \
     --reserved-words-mappings Character=chdf \
     -g swift5 \
     --global-property models,apis,modelDocs=false,apiDocs=false,supportingFiles \
-    --additional-properties swiftPackagePath=/,projectName=Network \
+    --additional-properties swiftPackagePath=/,projectName=Network,responseAs=AsyncAwait \
     -o "Network/Sources/Network"

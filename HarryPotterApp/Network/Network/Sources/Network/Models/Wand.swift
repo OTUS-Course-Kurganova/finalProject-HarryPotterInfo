@@ -14,9 +14,9 @@ public struct Wand: Codable, JSONEncodable, Hashable {
 
     public var wood: String = ""
     public var core: String = ""
-    public var length: Int = 0
+    public var length: Double? = 0.0
 
-    public init(wood: String = "", core: String = "", length: Int = 0) {
+    public init(wood: String = "", core: String = "", length: Double? = 0.0) {
         self.wood = wood
         self.core = core
         self.length = length

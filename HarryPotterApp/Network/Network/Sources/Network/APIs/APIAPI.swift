@@ -15,28 +15,20 @@ open class APIAPI {
     /**
      All characters
      
-     - parameter apiResponseQueue: The queue on which api response is dispatched.
-     - parameter completion: completion handler to receive the data and the error objects
+     - returns: [Person]
      */
-    @discardableResult
-    open class func charactersGet(apiResponseQueue: DispatchQueue = NetworkAPI.apiResponseQueue, completion: @escaping ((_ data: [Items]?, _ error: Error?) -> Void)) -> RequestTask {
-        return charactersGetWithRequestBuilder().execute(apiResponseQueue) { result in
-            switch result {
-            case let .success(response):
-                completion(response.body, nil)
-            case let .failure(error):
-                completion(nil, error)
-            }
-        }
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    open class func charactersGet() async throws -> [Person] {
+        return try await charactersGetWithRequestBuilder().execute().body
     }
 
     /**
      All characters
      - GET /characters
      - 
-     - returns: RequestBuilder<[Items]> 
+     - returns: RequestBuilder<[Person]> 
      */
-    open class func charactersGetWithRequestBuilder() -> RequestBuilder<[Items]> {
+    open class func charactersGetWithRequestBuilder() -> RequestBuilder<[Person]> {
         let localVariablePath = "/characters"
         let localVariableURLString = NetworkAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -49,7 +41,7 @@ open class APIAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[Items]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Person]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
@@ -58,19 +50,11 @@ open class APIAPI {
      characters in a certain house, e.g. /gryffindor
      
      - parameter house: (path) Name of a house 
-     - parameter apiResponseQueue: The queue on which api response is dispatched.
-     - parameter completion: completion handler to receive the data and the error objects
+     - returns: [Person]
      */
-    @discardableResult
-    open class func charactersHouseHouseGet(house: String, apiResponseQueue: DispatchQueue = NetworkAPI.apiResponseQueue, completion: @escaping ((_ data: [Items]?, _ error: Error?) -> Void)) -> RequestTask {
-        return charactersHouseHouseGetWithRequestBuilder(house: house).execute(apiResponseQueue) { result in
-            switch result {
-            case let .success(response):
-                completion(response.body, nil)
-            case let .failure(error):
-                completion(nil, error)
-            }
-        }
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    open class func charactersHouseHouseGet(house: String) async throws -> [Person] {
+        return try await charactersHouseHouseGetWithRequestBuilder(house: house).execute().body
     }
 
     /**
@@ -78,9 +62,9 @@ open class APIAPI {
      - GET /characters/house/{house}
      - 
      - parameter house: (path) Name of a house 
-     - returns: RequestBuilder<[Items]> 
+     - returns: RequestBuilder<[Person]> 
      */
-    open class func charactersHouseHouseGetWithRequestBuilder(house: String) -> RequestBuilder<[Items]> {
+    open class func charactersHouseHouseGetWithRequestBuilder(house: String) -> RequestBuilder<[Person]> {
         var localVariablePath = "/characters/house/{house}"
         let housePreEscape = "\(APIHelper.mapValueToPathItem(house))"
         let housePostEscape = housePreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
@@ -96,7 +80,7 @@ open class APIAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[Items]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Person]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
@@ -104,28 +88,20 @@ open class APIAPI {
     /**
      Characters who are Hogwarts staff during the book series
      
-     - parameter apiResponseQueue: The queue on which api response is dispatched.
-     - parameter completion: completion handler to receive the data and the error objects
+     - returns: [Person]
      */
-    @discardableResult
-    open class func charactersStaffGet(apiResponseQueue: DispatchQueue = NetworkAPI.apiResponseQueue, completion: @escaping ((_ data: [Items]?, _ error: Error?) -> Void)) -> RequestTask {
-        return charactersStaffGetWithRequestBuilder().execute(apiResponseQueue) { result in
-            switch result {
-            case let .success(response):
-                completion(response.body, nil)
-            case let .failure(error):
-                completion(nil, error)
-            }
-        }
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    open class func charactersStaffGet() async throws -> [Person] {
+        return try await charactersStaffGetWithRequestBuilder().execute().body
     }
 
     /**
      Characters who are Hogwarts staff during the book series
      - GET /characters/staff
      - 
-     - returns: RequestBuilder<[Items]> 
+     - returns: RequestBuilder<[Person]> 
      */
-    open class func charactersStaffGetWithRequestBuilder() -> RequestBuilder<[Items]> {
+    open class func charactersStaffGetWithRequestBuilder() -> RequestBuilder<[Person]> {
         let localVariablePath = "/characters/staff"
         let localVariableURLString = NetworkAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -138,7 +114,7 @@ open class APIAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[Items]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Person]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
@@ -146,28 +122,20 @@ open class APIAPI {
     /**
      Characters who are Hogwarts students during the book series
      
-     - parameter apiResponseQueue: The queue on which api response is dispatched.
-     - parameter completion: completion handler to receive the data and the error objects
+     - returns: [Person]
      */
-    @discardableResult
-    open class func charactersStudentsGet(apiResponseQueue: DispatchQueue = NetworkAPI.apiResponseQueue, completion: @escaping ((_ data: [Items]?, _ error: Error?) -> Void)) -> RequestTask {
-        return charactersStudentsGetWithRequestBuilder().execute(apiResponseQueue) { result in
-            switch result {
-            case let .success(response):
-                completion(response.body, nil)
-            case let .failure(error):
-                completion(nil, error)
-            }
-        }
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    open class func charactersStudentsGet() async throws -> [Person] {
+        return try await charactersStudentsGetWithRequestBuilder().execute().body
     }
 
     /**
      Characters who are Hogwarts students during the book series
      - GET /characters/students
      - 
-     - returns: RequestBuilder<[Items]> 
+     - returns: RequestBuilder<[Person]> 
      */
-    open class func charactersStudentsGetWithRequestBuilder() -> RequestBuilder<[Items]> {
+    open class func charactersStudentsGetWithRequestBuilder() -> RequestBuilder<[Person]> {
         let localVariablePath = "/characters/students"
         let localVariableURLString = NetworkAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -180,7 +148,7 @@ open class APIAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[Items]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Person]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
@@ -188,28 +156,20 @@ open class APIAPI {
     /**
      All spells
      
-     - parameter apiResponseQueue: The queue on which api response is dispatched.
-     - parameter completion: completion handler to receive the data and the error objects
+     - returns: [Spell]
      */
-    @discardableResult
-    open class func spellsGet(apiResponseQueue: DispatchQueue = NetworkAPI.apiResponseQueue, completion: @escaping ((_ data: [Items1]?, _ error: Error?) -> Void)) -> RequestTask {
-        return spellsGetWithRequestBuilder().execute(apiResponseQueue) { result in
-            switch result {
-            case let .success(response):
-                completion(response.body, nil)
-            case let .failure(error):
-                completion(nil, error)
-            }
-        }
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    open class func spellsGet() async throws -> [Spell] {
+        return try await spellsGetWithRequestBuilder().execute().body
     }
 
     /**
      All spells
      - GET /spells
      - 
-     - returns: RequestBuilder<[Items1]> 
+     - returns: RequestBuilder<[Spell]> 
      */
-    open class func spellsGetWithRequestBuilder() -> RequestBuilder<[Items1]> {
+    open class func spellsGetWithRequestBuilder() -> RequestBuilder<[Spell]> {
         let localVariablePath = "/spells"
         let localVariableURLString = NetworkAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -222,7 +182,7 @@ open class APIAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[Items1]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Spell]>.Type = NetworkAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }

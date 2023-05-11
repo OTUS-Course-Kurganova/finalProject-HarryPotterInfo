@@ -6,13 +6,11 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {
-        TabBarScreen()
-            .environmentObject(TabBarViewModel())
-            .environmentObject(SkeletonScreenViewModel())
-            .environmentObject(SkeletonListViewModel())
+        TabBarScreen(store: Store<TabBarState, TabBarActions>(initialState: TabBarState(), reducer: TabBarReducer, environment: TabBarEnvironment()))
             .environmentObject(SpellsViewModel())
     }
 }

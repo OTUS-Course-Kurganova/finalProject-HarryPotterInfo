@@ -6,9 +6,3 @@
 //
 
 import SwiftUI
-
-enum HogwartsStaffTypes: String {
-    case students
-    case teachers
-    case none
-}

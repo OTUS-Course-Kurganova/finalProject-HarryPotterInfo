@@ -36,10 +36,5 @@
 
 // MARK: - person ancestry variants
 "person_ancestry_blood" = "Чистокровка";
-"person_ancestry_half_blood" = "полукровка";
+"person_ancestry_half_blood" = "Полукровка";
 "person_ancestry_dirty_blood" = "Грязнокровка";
-
-// MARK: -
-"person_" = "";
-"person_" = "";
-"person_" = "";

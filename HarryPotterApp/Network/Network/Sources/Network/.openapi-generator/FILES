@@ -7,8 +7,8 @@ Extensions.swift
 JSONDataEncoding.swift
 JSONEncodingHelper.swift
 Models.swift
-Models/Items.swift
-Models/Items1.swift
+Models/Person.swift
+Models/Spell.swift
 Models/Wand.swift
 OpenISO8601DateFormatter.swift
 SynchronizedDictionary.swift
