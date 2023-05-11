@@ -29,12 +29,10 @@ let SkeletonListReducer = Reducer<SkeletonListState, SkeletonListActions, Skelet
             state.isShowDetailedScreen = false
             return .none
         case let .showDetailedInfo(person):
+            state.isShowDetailedScreen = true
             state.detailesState = PersonDetailedState(person: person)
             return .none
         case let .detailedActions(actions):
-            if actions == .back {
-                state.detailesState = nil
-            }
             return .none
     }
 }

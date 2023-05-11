@@ -13,7 +13,5 @@ let PersonDetailedReducer = Reducer<PersonDetailedState, PersonDetaildedActions,
     switch action {
         case let .tapOnPerson(person):
             return .none
-        case .back:
-            return .none
     }
 }

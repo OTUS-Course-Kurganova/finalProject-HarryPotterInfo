@@ -8,6 +8,5 @@
 import Foundation
 
 enum PersonDetaildedActions: Equatable {
-    case back
     case tapOnPerson(PersonDataSource)
 }

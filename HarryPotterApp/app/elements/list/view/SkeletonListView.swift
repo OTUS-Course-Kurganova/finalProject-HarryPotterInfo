@@ -11,16 +11,20 @@ import Kingfisher
 
 struct SkeletonListView: View {
     let stateStore: Store<SkeletonListState, SkeletonListActions>
-
+    
     var body: some View {
         WithViewStore(stateStore) { viewStore in
-            GeometryReader { geom in
+            NavigationView {
                 List {
                     ForEach(viewStore.hogwartsStaff) { person in
-                        configurePersonCell(person: person)
-                            .onTapGesture {
-                                viewStore.send(.showDetailedInfo(person))
-                            }
+                        NavigationLink(
+                            destination: PersonDetailedScreen(stateStore: stateStore.scope(state: \.detailesState, action: SkeletonListActions.detailedActions)),
+                           label: {
+                               configurePersonCell(person: person)
+                                   .onTapGesture {
+                                       viewStore.send(.showDetailedInfo(person))
+                                   }
+                           })
                     }
                 }
                 .onAppear { viewStore.send(.getAllHogwartsStaff) }

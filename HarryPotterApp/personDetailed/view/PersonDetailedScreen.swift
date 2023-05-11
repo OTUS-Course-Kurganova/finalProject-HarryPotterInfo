@@ -15,7 +15,6 @@ struct PersonDetailedScreen: View {
     var body: some View {
         WithViewStore(stateStore) { viewStore in
             VStack{
-                Button("< Назад") { viewStore.send(.back)}
                 ScrollView {
                     VStack {
                         header
