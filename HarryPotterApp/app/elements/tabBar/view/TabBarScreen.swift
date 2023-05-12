@@ -24,7 +24,7 @@ struct TabBarScreen: View {
                     .tag(0)
                     .tabItem {
                         Text("Герои")
-                        Image("studentsIconTab")
+                        Image("staffIconTab")
                     }
                     SpellsScreen(stateStore: Store<SpellsState, SpellsActions>(initialState: SpellsState(),
                                                                                reducer: SpellsReducer,

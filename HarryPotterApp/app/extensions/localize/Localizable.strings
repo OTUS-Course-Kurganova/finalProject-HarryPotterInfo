@@ -47,6 +47,7 @@
 "hair_black" = "Темный";
 "hair_brown" = "Каштановый";
 "hair_blonde" = "Светлый";
+"hair_red" = "Огненные";
 
 // MARK: - person ancestry variants
 "person_ancestry_pure-blood" = "Чистокровка";

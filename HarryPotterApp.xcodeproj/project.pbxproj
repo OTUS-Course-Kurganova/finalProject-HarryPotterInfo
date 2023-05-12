@@ -73,6 +73,8 @@
 		18F495092A0E35A6008DFD2F /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsReducer.swift; sourceTree = "<group>"; };
 		18F4950D2A0E8495008DFD2F /* HogwartsStaffType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsStaffType.swift; sourceTree = "<group>"; };
+		18F4950F2A0EAA42008DFD2F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		18F495102A0EB059008DFD2F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		18F85EEA29F591270087EF81 /* HarryPotterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterAppApp.swift; sourceTree = "<group>"; };
 		18F85EEF29F591270087EF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -309,6 +311,8 @@
 			isa = PBXGroup;
 			children = (
 				18F85EEC29F591270087EF81 /* HarryPotterApp */,
+				18F4950F2A0EAA42008DFD2F /* README.md */,
+				18F495102A0EB059008DFD2F /* images */,
 				18F85EEB29F591270087EF81 /* Products */,
 				187DC4302A0A790E00056315 /* Frameworks */,
 			);
