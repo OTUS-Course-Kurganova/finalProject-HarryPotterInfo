@@ -8,5 +8,6 @@
 import Foundation
 
 struct SpellsState: Equatable {
-    
+    var isLoading = false
+    var spells: [SpellDataSource] = []
 }

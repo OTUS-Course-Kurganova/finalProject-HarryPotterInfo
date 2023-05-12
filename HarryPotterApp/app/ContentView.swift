@@ -10,8 +10,9 @@ import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {
-        TabBarScreen(store: Store<TabBarState, TabBarActions>(initialState: TabBarState(), reducer: TabBarReducer, environment: TabBarEnvironment()))
-            .environmentObject(SpellsViewModel())
+        TabBarScreen(store: Store<TabBarState, TabBarActions>(initialState: TabBarState(),
+                                                              reducer: TabBarReducer,
+                                                              environment: TabBarEnvironment()))
     }
 }
 

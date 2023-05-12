@@ -32,8 +32,3 @@ struct WandDataSource: Equatable {
     var core: String = ""
     var length: Double? = nil
 }
-
-struct SpellsDataSource {
-    let name: String = ""
-    let description: String = ""
-}

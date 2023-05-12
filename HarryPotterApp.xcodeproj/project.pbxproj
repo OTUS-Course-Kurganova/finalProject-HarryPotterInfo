@@ -13,7 +13,6 @@
 		187DC41E2A07B4DE00056315 /* SkeletonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC41D2A07B4DE00056315 /* SkeletonListView.swift */; };
 		187DC4252A07BC4100056315 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC4242A07BC4100056315 /* Loader.swift */; };
 		187DC42C2A08FD6000056315 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 187DC42B2A08FD6000056315 /* Localizable.stringsdict */; };
-		187DC42E2A0A72A500056315 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC42D2A0A72A500056315 /* SpellsViewModel.swift */; };
 		187DC4352A0A79C000056315 /* generate.sh in Resources */ = {isa = PBXBuildFile; fileRef = 187DC4342A0A79C000056315 /* generate.sh */; };
 		187DC4372A0A79DB00056315 /* swagger.json in Resources */ = {isa = PBXBuildFile; fileRef = 187DC4362A0A79DB00056315 /* swagger.json */; };
 		187DC4392A0A7D3400056315 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 187DC4382A0A7D3400056315 /* Network */; };
@@ -33,6 +32,10 @@
 		18F494FB2A0D4E70008DFD2F /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F494FA2A0D4E70008DFD2F /* TabBarState.swift */; };
 		18F494FD2A0D4E8A008DFD2F /* TabBarActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F494FC2A0D4E8A008DFD2F /* TabBarActions.swift */; };
 		18F495002A0D51A2008DFD2F /* SpellsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F494FF2A0D51A2008DFD2F /* SpellsState.swift */; };
+		18F495022A0E356C008DFD2F /* SpellsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F495012A0E356C008DFD2F /* SpellsActions.swift */; };
+		18F495052A0E357D008DFD2F /* SpellsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F495042A0E357D008DFD2F /* SpellsEnvironment.swift */; };
+		18F4950A2A0E35A6008DFD2F /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F495092A0E35A6008DFD2F /* SpellsModel.swift */; };
+		18F4950C2A0E3B20008DFD2F /* SpellsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */; };
 		18F85EEE29F591270087EF81 /* HarryPotterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */; };
 		18F85EF029F591270087EF81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EEF29F591270087EF81 /* ContentView.swift */; };
 		18F85EF229F591280087EF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F85EF129F591280087EF81 /* Assets.xcassets */; };
@@ -49,7 +52,6 @@
 		187DC41D2A07B4DE00056315 /* SkeletonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonListView.swift; sourceTree = "<group>"; };
 		187DC4242A07BC4100056315 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		187DC42B2A08FD6000056315 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
-		187DC42D2A0A72A500056315 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
 		187DC42F2A0A78BA00056315 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Network; path = HarryPotterApp/Network/Network; sourceTree = SOURCE_ROOT; };
 		187DC4342A0A79C000056315 /* generate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
 		187DC4362A0A79DB00056315 /* swagger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swagger.json; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		18F494FA2A0D4E70008DFD2F /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
 		18F494FC2A0D4E8A008DFD2F /* TabBarActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarActions.swift; sourceTree = "<group>"; };
 		18F494FF2A0D51A2008DFD2F /* SpellsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsState.swift; sourceTree = "<group>"; };
+		18F495012A0E356C008DFD2F /* SpellsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsActions.swift; sourceTree = "<group>"; };
+		18F495042A0E357D008DFD2F /* SpellsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsEnvironment.swift; sourceTree = "<group>"; };
+		18F495092A0E35A6008DFD2F /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
+		18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsReducer.swift; sourceTree = "<group>"; };
 		18F85EEA29F591270087EF81 /* HarryPotterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterAppApp.swift; sourceTree = "<group>"; };
 		18F85EEF29F591270087EF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -262,8 +268,41 @@
 			isa = PBXGroup;
 			children = (
 				18F494FF2A0D51A2008DFD2F /* SpellsState.swift */,
+				18F495012A0E356C008DFD2F /* SpellsActions.swift */,
 			);
 			path = feature;
+			sourceTree = "<group>";
+		};
+		18F495032A0E356F008DFD2F /* environment */ = {
+			isa = PBXGroup;
+			children = (
+				18F495042A0E357D008DFD2F /* SpellsEnvironment.swift */,
+			);
+			path = environment;
+			sourceTree = "<group>";
+		};
+		18F495062A0E3581008DFD2F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18F85F0929F592D10087EF81 /* SpellsScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		18F495072A0E358E008DFD2F /* reducer */ = {
+			isa = PBXGroup;
+			children = (
+				18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */,
+			);
+			path = reducer;
+			sourceTree = "<group>";
+		};
+		18F495082A0E359A008DFD2F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18F495092A0E35A6008DFD2F /* SpellsModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		18F85EE129F591270087EF81 = {
@@ -330,9 +369,11 @@
 		18F85EFF29F591690087EF81 /* spells */ = {
 			isa = PBXGroup;
 			children = (
+				18F495062A0E3581008DFD2F /* view */,
+				18F495072A0E358E008DFD2F /* reducer */,
 				18F494FE2A0D5191008DFD2F /* feature */,
-				18F85F0929F592D10087EF81 /* SpellsScreen.swift */,
-				187DC42D2A0A72A500056315 /* SpellsViewModel.swift */,
+				18F495032A0E356F008DFD2F /* environment */,
+				18F495082A0E359A008DFD2F /* model */,
 			);
 			path = spells;
 			sourceTree = "<group>";
@@ -442,9 +483,11 @@
 				187DC4652A0D13F300056315 /* PersonDetailedReducer.swift in Sources */,
 				187DC45F2A0D128E00056315 /* PersonDetailedState.swift in Sources */,
 				18F494FD2A0D4E8A008DFD2F /* TabBarActions.swift in Sources */,
+				18F495052A0E357D008DFD2F /* SpellsEnvironment.swift in Sources */,
 				187DC4442A0A83CB00056315 /* SkeletonListReducer.swift in Sources */,
 				18F85EEE29F591270087EF81 /* HarryPotterAppApp.swift in Sources */,
 				18F85F0229F592310087EF81 /* TabBarScreen.swift in Sources */,
+				18F495022A0E356C008DFD2F /* SpellsActions.swift in Sources */,
 				18F494F92A0D4E3B008DFD2F /* TabBarEnvironment.swift in Sources */,
 				187DC4612A0D129D00056315 /* PersonDetaildedActions.swift in Sources */,
 				18F85F0A29F592D10087EF81 /* SpellsScreen.swift in Sources */,
@@ -452,8 +495,9 @@
 				187DC4632A0D12B400056315 /* PersonDetailedEnvironment.swift in Sources */,
 				187DC4152A07A5E600056315 /* HogwartsStaffTypes.swift in Sources */,
 				187DC43D2A0A802B00056315 /* SkeletonListActions.swift in Sources */,
+				18F4950C2A0E3B20008DFD2F /* SpellsReducer.swift in Sources */,
+				18F4950A2A0E35A6008DFD2F /* SpellsModel.swift in Sources */,
 				187DC4252A07BC4100056315 /* Loader.swift in Sources */,
-				187DC42E2A0A72A500056315 /* SpellsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

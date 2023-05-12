@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 import ComposableArchitecture
 
 struct PersonDetailedScreen: View {
@@ -24,12 +25,6 @@ struct PersonDetailedScreen: View {
                     }
                 }
             }
-            .background(Rectangle()
-                .fill (Color(red: 241/255, green: 230/255, blue: 185/255).opacity(0.3))
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                .ignoresSafeArea(.all))
-            
-            //            .background(Color(red: 241/255, green: 230/255, blue: 185/255).opacity(0.3))
             .onAppear {
                 data = viewStore.person
             }
@@ -39,7 +34,12 @@ struct PersonDetailedScreen: View {
     var header: some View {
         Group {
             VStack {
-                //            Image(data.image)
+                if let url = URL(string: data.image) {
+                    generateImage(url: url)
+                        .padding(.top, 5)
+                } else {
+                    EmptyView()
+                }
                 personName
                     .padding(.bottom, 20)
                 mainInfo
@@ -48,6 +48,21 @@ struct PersonDetailedScreen: View {
             }
         }
         .padding(.bottom, 50)
+    }
+
+    func generateImage(url: URL) -> some View {
+        KFImage(url)
+          .placeholder { loader }
+          .resizable()
+          .frame(width: 190, height: 220)
+          .clipped()
+          .padding(.horizontal, 16)
+    }
+
+    var loader: some View {
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle())
+            .padding(.top, 100)
     }
 
     var personName: some View {

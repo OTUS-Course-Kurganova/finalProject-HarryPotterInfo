@@ -18,19 +18,25 @@ struct TabBarScreen: View {
                 send: TabBarActions.selectedTabChange
             ), content: {
                 Group {
-                    SkeletonListView(stateStore: Store<SkeletonListState, SkeletonListActions>(initialState: SkeletonListState(), reducer: SkeletonListReducer, environment: SkeletonListEnvironment()))
+                    SkeletonListView(stateStore: Store<SkeletonListState, SkeletonListActions>(initialState: SkeletonListState(),
+                                                                                               reducer: SkeletonListReducer,
+                                                                                               environment: SkeletonListEnvironment()))
                         .tag(0)
                         .tabItem {
                             Text("Students")
                             Image("studentsIconTab")
                         }
-                    SkeletonListView(stateStore: Store<SkeletonListState, SkeletonListActions>(initialState: SkeletonListState(), reducer: SkeletonListReducer, environment: SkeletonListEnvironment()))
+                    SkeletonListView(stateStore: Store<SkeletonListState, SkeletonListActions>(initialState: SkeletonListState(),
+                                                                                               reducer: SkeletonListReducer,
+                                                                                               environment: SkeletonListEnvironment()))
                         .tag(1)
                         .tabItem {
                             Text("Staff")
                             Image("staffIconTab")
                         }
-                    SpellsScreen()
+                    SpellsScreen(stateStore: Store<SpellsState, SpellsActions>(initialState: SpellsState(),
+                                                                               reducer: SpellsReducer,
+                                                                               environment: SpellsEnvironment()))
                         .tag(2)
                         .tabItem {
                             Text("Spells")

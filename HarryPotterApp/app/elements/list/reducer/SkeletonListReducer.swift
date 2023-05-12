@@ -33,6 +33,7 @@ let SkeletonListReducer = Reducer<SkeletonListState, SkeletonListActions, Skelet
             state.detailesState = PersonDetailedState(person: person)
             return .none
         case let .detailedActions(actions):
+            
             return .none
     }
 }
