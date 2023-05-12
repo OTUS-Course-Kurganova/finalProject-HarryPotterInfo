@@ -6,12 +6,8 @@
   
 */
 
-// MARK: - filter buttons
-"filter_button_houses" = "Вы можете отфильтровать всех %@ по\U00A0факультетам";
-"filter_button_sex" = "Вы можете отфильтровать всех %@ по\U00A0полу";
-
-"person_filter_students" = "студентов";
-"person_filter_teachers" = "учителей";
+"person_type_student" = "студенты";
+"person_type_teacher" = "учителя";
 
 // ЬARK: - sex
 "sex_male" = "Мужской";

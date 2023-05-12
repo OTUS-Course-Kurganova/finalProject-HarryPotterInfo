@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		187DC4152A07A5E600056315 /* HogwartsStaffTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC4142A07A5E600056315 /* HogwartsStaffTypes.swift */; };
 		187DC4172A07A98800056315 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 187DC4162A07A98800056315 /* Localizable.strings */; };
 		187DC41A2A07ABAF00056315 /* LocalizeFormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC4192A07ABAF00056315 /* LocalizeFormattedString.swift */; };
 		187DC41E2A07B4DE00056315 /* SkeletonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC41D2A07B4DE00056315 /* SkeletonListView.swift */; };
@@ -46,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		187DC4142A07A5E600056315 /* HogwartsStaffTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsStaffTypes.swift; sourceTree = "<group>"; };
 		187DC4162A07A98800056315 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		187DC4192A07ABAF00056315 /* LocalizeFormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeFormattedString.swift; sourceTree = "<group>"; };
 		187DC41D2A07B4DE00056315 /* SkeletonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonListView.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				187DC4182A07AB9700056315 /* localize */,
-				187DC4142A07A5E600056315 /* HogwartsStaffTypes.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -122,8 +119,8 @@
 			children = (
 				18F494F22A0D4DE3008DFD2F /* view */,
 				18F494F52A0D4DF8008DFD2F /* feature */,
-				18F494F42A0D4DF0008DFD2F /* environment */,
 				18F494F32A0D4DE9008DFD2F /* reducer */,
+				18F494F42A0D4DF0008DFD2F /* environment */,
 			);
 			path = tabBar;
 			sourceTree = "<group>";
@@ -493,7 +490,6 @@
 				18F85F0A29F592D10087EF81 /* SpellsScreen.swift in Sources */,
 				18F85F0629F592B10087EF81 /* PersonDetailedScreen.swift in Sources */,
 				187DC4632A0D12B400056315 /* PersonDetailedEnvironment.swift in Sources */,
-				187DC4152A07A5E600056315 /* HogwartsStaffTypes.swift in Sources */,
 				187DC43D2A0A802B00056315 /* SkeletonListActions.swift in Sources */,
 				18F4950C2A0E3B20008DFD2F /* SpellsReducer.swift in Sources */,
 				18F4950A2A0E35A6008DFD2F /* SpellsModel.swift in Sources */,

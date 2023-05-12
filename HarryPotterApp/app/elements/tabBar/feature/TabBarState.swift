@@ -8,12 +8,9 @@
 import Foundation
 
 struct TabBarState: Equatable {
-    var cardsState = SkeletonListState()
-    var favoritesState = SpellsState()
-
     enum Tab {
-      case staff
-      case spells
+        case staff
+        case spells
     }
 
     var selectedTab = Tab.staff
