@@ -16,25 +16,38 @@ struct SkeletonListView: View {
         WithViewStore(stateStore) { viewStore in
             NavigationView {
                 List {
-                    if viewStore.isLoading && viewStore.hogwartsStaff.isEmpty { loader }
-                    ForEach(viewStore.hogwartsStaff) { person in
-                        if viewStore.isShowDetailedScreen {
-                            NavigationLink(
-                                destination:
-                                    PersonDetailedScreen(stateStore: stateStore.scope(state: \.detailesState, action: SkeletonListActions.detailedActions))
-                                ,
-                                label: {
-                                    configurePersonCell(person: person)
-                                        .onTapGesture {
-                                            viewStore.send(.showDetailedInfo(person))
-                                        }
-                                })
-                        } else { EmptyView() }
-                    }
+                    configureSection(type: .student, store: viewStore)
+                    configureSection(type: .teacher, store: viewStore)
                 }
                 .onAppear {
-                    viewStore.send(.getAllHogwartsStaff)
+                    viewStore.send(.getAllHogwartsStaff(.student))
+                    viewStore.send(.getAllHogwartsStaff(.teacher))
                 }
+            }
+        }
+    }
+
+    func configureSection(type: HogwartsStaffType, store: ViewStore<SkeletonListState, SkeletonListActions>) -> some View {
+        var info: [PersonDataSource]
+        switch type {
+            case .student: info = store.hogwartsStudents
+            case .teacher: info = store.hogwartsTeachers
+        }
+        return Section(localized(key: "person_type_\(type)")) {
+            if store.isLoading && info.isEmpty { loader }
+            ForEach(info) { person in
+                if store.isShowDetailedScreen {
+                    NavigationLink(
+                        destination:
+                            PersonDetailedScreen(stateStore: stateStore.scope(state: \.detailesState, action: SkeletonListActions.detailedActions))
+                        ,
+                        label: {
+                            configurePersonCell(person: person)
+                                .onTapGesture {
+                                    store.send(.showDetailedInfo(person))
+                                }
+                        })
+                } else { EmptyView() }
             }
         }
     }

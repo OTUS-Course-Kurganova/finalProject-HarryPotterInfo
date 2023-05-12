@@ -23,7 +23,7 @@ struct TabBarScreen: View {
                                                                                                environment: SkeletonListEnvironment()))
                     .tag(0)
                     .tabItem {
-                        Text("Staff")
+                        Text("Герои")
                         Image("studentsIconTab")
                     }
                     SpellsScreen(stateStore: Store<SpellsState, SpellsActions>(initialState: SpellsState(),
@@ -31,7 +31,7 @@ struct TabBarScreen: View {
                                                                                environment: SpellsEnvironment()))
                     .tag(1)
                     .tabItem {
-                        Text("Spells")
+                        Text("Заклинания")
                         Image("spellsIconTab")
                     }
                 }

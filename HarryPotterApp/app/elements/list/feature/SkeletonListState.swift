@@ -12,6 +12,8 @@ struct SkeletonListState: Equatable {
     var isLoading = false
     var isShowDetailedScreen = false
 
-    var hogwartsStaff: [PersonDataSource] = []
+    var hogwartsStudents: [PersonDataSource] = []
+    var hogwartsTeachers: [PersonDataSource] = []
+
     var detailesState: PersonDetailedState = .init()
 }

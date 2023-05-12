@@ -35,6 +35,7 @@
 		18F495052A0E357D008DFD2F /* SpellsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F495042A0E357D008DFD2F /* SpellsEnvironment.swift */; };
 		18F4950A2A0E35A6008DFD2F /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F495092A0E35A6008DFD2F /* SpellsModel.swift */; };
 		18F4950C2A0E3B20008DFD2F /* SpellsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */; };
+		18F4950E2A0E8495008DFD2F /* HogwartsStaffType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4950D2A0E8495008DFD2F /* HogwartsStaffType.swift */; };
 		18F85EEE29F591270087EF81 /* HarryPotterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */; };
 		18F85EF029F591270087EF81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85EEF29F591270087EF81 /* ContentView.swift */; };
 		18F85EF229F591280087EF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F85EF129F591280087EF81 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		18F495042A0E357D008DFD2F /* SpellsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsEnvironment.swift; sourceTree = "<group>"; };
 		18F495092A0E35A6008DFD2F /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		18F4950B2A0E3B20008DFD2F /* SpellsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsReducer.swift; sourceTree = "<group>"; };
+		18F4950D2A0E8495008DFD2F /* HogwartsStaffType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsStaffType.swift; sourceTree = "<group>"; };
 		18F85EEA29F591270087EF81 /* HarryPotterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F85EED29F591270087EF81 /* HarryPotterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterAppApp.swift; sourceTree = "<group>"; };
 		18F85EEF29F591270087EF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				187DC4182A07AB9700056315 /* localize */,
+				18F4950D2A0E8495008DFD2F /* HogwartsStaffType.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				187DC43B2A0A7F9300056315 /* SkeletonListState.swift in Sources */,
 				18F494F72A0D4E2B008DFD2F /* TabBarReducer.swift in Sources */,
 				187DC4652A0D13F300056315 /* PersonDetailedReducer.swift in Sources */,
+				18F4950E2A0E8495008DFD2F /* HogwartsStaffType.swift in Sources */,
 				187DC45F2A0D128E00056315 /* PersonDetailedState.swift in Sources */,
 				18F494FD2A0D4E8A008DFD2F /* TabBarActions.swift in Sources */,
 				18F495052A0E357D008DFD2F /* SpellsEnvironment.swift in Sources */,

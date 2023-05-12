@@ -11,9 +11,11 @@ import Network
 struct SkeletonListEnvironment {
     let network = APIAPI.self
 
-    func getAllHogwartsStaff() async throws -> [PersonDataSource] {
-        return try await network.charactersGet()
+    func getAllHogwartsStaff(type: HogwartsStaffType) async throws -> [PersonDataSource] {
+        let people = try await network.charactersGet()
+        return people
             .filter {!$0.image.isEmpty }
+            .filter { type == .student ? $0.hogwartsStudent == true : $0.hogwartsStaff == true }
             .map { convertToPersonDataSource($0) }
     }
 

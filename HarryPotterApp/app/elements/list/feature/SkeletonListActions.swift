@@ -9,7 +9,7 @@ import Foundation
 import ComposableArchitecture
 
 enum SkeletonListActions {
-    case getAllHogwartsStaff
+    case getAllHogwartsStaff(HogwartsStaffType)
     case getHogwartsStaffResult(TaskResult<[PersonDataSource]>)
 
     case showDetailedInfo(PersonDataSource)
