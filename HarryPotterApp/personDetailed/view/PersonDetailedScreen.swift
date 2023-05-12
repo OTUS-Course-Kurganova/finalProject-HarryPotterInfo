@@ -19,6 +19,7 @@ struct PersonDetailedScreen: View {
                 ScrollView {
                     VStack {
                         header
+                        ancestryInfo
                         apperanceInfo
                         wizardInfo
                         actorInfo
@@ -74,13 +75,13 @@ struct PersonDetailedScreen: View {
 
     var mainInfo: some View {
         HStack {
-            Text(data.species)
+            Text(localized(key: "species_\(data.species)", data.species))
             setDivider(width: 7)
             if let dateOfBirth = data.dateOfBirth {
                 Text(dateOfBirth)
                 setDivider(width: 7)
             }
-            Text(gender_localized(key: "person_alive", gender: .male))
+            aliveSection()
         }
         .font(.callout)
         .foregroundColor(.gray)
@@ -88,38 +89,34 @@ struct PersonDetailedScreen: View {
         .fontDesign(.monospaced)
         .padding(.horizontal, 60)
     }
-//
-//    //    func aliveSection() -> some View {
-//    //        switch data.gender {
-//    //            case "male":
-//    //                if data.alive {
-//    //                    return Text(gender_localized(key: "person_alive", gender: .male))
-//    //                } else {
-//    //                    return Text(gender_localized(key: "person_alive", gender: .male))
-//    //                }
-//    //            case "female":
-//    //                if data.alive {
-//    //                    return Text(gender_localized(key: "person_alive", gender: .female))
-//    //                } else {
-//    //                    return Text(gender_localized(key: "person_alive", gender: .female))
-//    //                }
-//    //            default:
-//    //                return EmptyView()
-//    //        }
-//    //    }
-//
+
+    func aliveSection() -> some View {
+        if data.gender == "male" && data.alive { return Text(gender_localized(key: "person_alive", gender: .male)) }
+        if data.gender == "male" && !data.alive { return Text(gender_localized(key: "person_not_alive", gender: .male)) }
+        if data.gender == "female" && data.alive { return Text(gender_localized(key: "person_alive", gender: .female)) }
+        if data.gender == "female" && !data.alive { return Text(gender_localized(key: "person_not_alive", gender: .female)) }
+        else { return Text("Неизвестно") }
+    }
+
     var house: some View {
-        Text(data.house)
+        Text(localized(key:"house_\(data.house)", data.house))
             .font(.callout)
             .fontWeight(.regular)
             .fontDesign(.rounded)
     }
 
+    var ancestryInfo: some View {
+        Group {
+            infoSection(key:"person_ancestry", value: localized(key: "person_ancestry_\(data.ancestry)", data.ancestry))
+        }
+        .padding(.bottom, 40)
+    }
+
     var apperanceInfo: some View {
         Group {
             VStack {
-                infoSection(key:"person_eye_color", value: data.eyeColour)
-                infoSection(key:"person_hair_color", value: data.hairColour)
+                infoSection(key:"person_eye_color", value: localized(key: "eye_\(data.eyeColour)", data.eyeColour))
+                infoSection(key:"person_hair_color", value: localized(key: "hair_\(data.hairColour)", data.hairColour))
             }
         }
         .padding(.bottom, 40)
@@ -128,17 +125,30 @@ struct PersonDetailedScreen: View {
     var wizardInfo: some View {
         Group {
             VStack {
-                infoSection(key:"person_wand", value: "Феникс kfdjbvkjdfv fdjkvjkdfbvd ")
-                infoSection(key:"person_patronus", value: "Олень kfdjbvkjdfv fdjkvjkdfbvd")
+                if data.wand.core.isEmpty, data.wand.wood.isEmpty { EmptyView() } else {
+                    makeWandInfo()
+                }
+                if data.patronus.isEmpty { EmptyView() } else {
+                    infoSection(key:"person_patronus", value: data.patronus)
+                }
             }
         }
         .padding(.bottom, 40)
     }
 
+    func makeWandInfo() -> some View {
+        if let length = data.wand.length, length != 0 {
+            return infoSection(key:"person_wand",
+                               value: "Кора: \(data.wand.core). Дерево: \(data.wand.wood). Длина: \(data.wand.length ?? 0)")
+        } else {
+            return infoSection(key:"person_wand", value: "Кора: \(data.wand.core). Дерево: \(data.wand.wood)")
+        }
+    }
+
     var actorInfo: some View {
         Group {
             VStack {
-                infoSection(key:"person_actor", value: "Daniel Radcliffe")
+                infoSection(key:"person_actor", value: data.actor)
             }
         }
     }

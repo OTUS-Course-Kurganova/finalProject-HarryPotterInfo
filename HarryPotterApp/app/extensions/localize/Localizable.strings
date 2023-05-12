@@ -9,15 +9,11 @@
 "person_type_student" = "студенты";
 "person_type_teacher" = "учителя";
 
-// ЬARK: - sex
-"sex_male" = "Мужской";
-"sex_female" = "Женский";
-
 // MARK: - houses
-"house_gryffindor" = "Гриффиндор";
-"house_slytherin" = "Слизерин";
-"house_hufflepuff" = "Пуффендуй";
-"house_rawenclaw" = "Когтевран";
+"house_Gryffindor" = "Гриффиндор";
+"house_Slytherin" = "Слизерин";
+"house_Hufflepuff" = "Пуффендуй";
+"house_Ravenclaw" = "Когтевран";
 
 // MARK: - person info
 "person_human" = "Человек";
@@ -30,7 +26,30 @@
 "person_patronus" = "Патронус";
 "person_actor" = "Актер";
 
+
+//MARK: - species
+"species_human" = "Человек";
+"species_half-giant" = "Великан";
+"species_сat" = "Кошка";
+
+//MARK: - eye color
+"eye_green" = "Зеленый";
+"eye_brown" = "Карий";
+"eye_blue" = "Голубой";
+"eye_grey" = "Cерый";
+"eye_black" = "Темный";
+"eye_red" = "Красный";
+"eye_yellow" = "Желтый";
+"eye_" = "Неизвестно";
+
+//MARK: - hair color
+"hair_grey" = "Cерый";
+"hair_black" = "Темный";
+"hair_brown" = "Каштановый";
+"hair_blonde" = "Светлый";
+
 // MARK: - person ancestry variants
-"person_ancestry_blood" = "Чистокровка";
-"person_ancestry_half_blood" = "Полукровка";
-"person_ancestry_dirty_blood" = "Грязнокровка";
+"person_ancestry_pure-blood" = "Чистокровка";
+"person_ancestry_half-blood" = "Полукровка";
+"person_ancestry_muggleborn" = "Родители маглы";
+"person_ancestry_" = "Неизвестно";
